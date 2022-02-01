@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>TUGAS14</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container w3-black">
+    <img src="LegendaryMotorsport-GTAV-Logo.png" width="2250px" height="400px">
+</div>
+<div class="w3-bar w3-red">
+    <button class="w3-bar-item w3-button" onclick="openKota('Progen')">Progen</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Grotti')">Grotti</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Peggasi')">Peggasi</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Overflod')">Overflod</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Profile')">Profile</button>
+</div>
+<div id="Progen" class="w3-container w3-center kota" style="display:none">
+    <h2>Progen T20</h2>
+    <img src="Progen T20.jpg" class="w3-animate-fading" width="1500px">
+</div>
+<div id="Grotti" class="w3-container w3-center w3-animate-bottom kota" style="display:none">
+    <h2>Grotti Itali RSX</h2>
+    <img src="Grotti Itali RSX.png" width="1500px">
+</div>
+<div id="Peggasi" class="w3-container w3-center w3-animate-top kota" style="display:none">
+    <h2>Peggasi Osiris</h2>
+    <img src="Peggasi Osiris.jpg" width="1500px">
+</div>
+<div id="Overflod" class="w3-container w3-center w3-animate-zoom kota" style="display:none">
+    <h2>Overflod Entity XXR</h2>
+    <img src="Overflod Entity XXR.jpg" width="1500px">
+</div>
+<div id="Profile" class="w3-container w3-center w3-animate-left kota" style="display:none">
+    <h2>Profile</h2>
+    <img src="IMG_20210917_142945.jpg" width="500px">
+    <h2>NIM : 10121047</h2>
+    <h2>Nama : Muhammad Hasan</h2>
+    <h2>Kelas : IF2</h2>
+</div>
+<script>
+function openKota(namaKota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    }
+    document.getElementById(namaKota).style.display = "block"; 
+    }
+</script>
+</body>
+</html>
